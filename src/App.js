@@ -4,10 +4,15 @@ import "./App.css"
 import { useEffect, useState } from "react";
 import { getToken } from "./components/spotify";
 import SpotifyWebApi from "spotify-web-api-js";
+import { useStateContextValue } from "./components/State";
 
 const spotify = new SpotifyWebApi()
 function App() {
   const [token,setToken]=useState(null)
+  const [{user}] = useStateContextValue();
+
+
+
   useEffect(()=>{
     const hash=getToken();
     window.location.hash=""

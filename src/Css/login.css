@@ -10,8 +10,10 @@
 .login  a{
     background-color: #1db954;
     color: white;
-    padding: 24px;
-    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 26px;
+    font-size: 18px;
     border-radius: 99px;
     text-decoration: none;
 
