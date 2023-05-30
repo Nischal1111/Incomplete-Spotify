@@ -1,0 +1,29 @@
+.menu{
+    display: flex;
+    align-items: center;
+    color: rgb(131, 130, 130);
+    transition: .2s color ease-in;
+    height: 42px;
+    cursor: pointer;
+}
+.menu:hover{
+    color: white;
+}
+.menu-icons{
+    margin: 0rem .5rem;
+}
+.sidebar--play{
+    margin-left: .5rem;
+    padding: .3rem;
+    font-size: 12px;
+}
+.sidebar hr{
+    width: 90%;
+    border:1px solid #282828 ;
+    margin: 10px auto;
+}
+.sidebar > p{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}

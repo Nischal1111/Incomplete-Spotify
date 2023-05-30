@@ -2,12 +2,12 @@
     flex: .2;
     height: 100vh;
     background-color: #040404;
-    color: white;
+    color: aliceblue;
     min-width: 230px;
     padding: 0px 10px;
 }
 .logo{
     height: 70px;
-    width: 100px;
-    object-fit: contain;
+    margin-right: auto;
+    padding :10px
 }
