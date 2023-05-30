@@ -1,0 +1,13 @@
+.sidebar{
+    flex: .2;
+    height: 100vh;
+    background-color: #040404;
+    color: white;
+    min-width: 230px;
+    padding: 0px 10px;
+}
+.logo{
+    height: 70px;
+    width: 100px;
+    object-fit: contain;
+}

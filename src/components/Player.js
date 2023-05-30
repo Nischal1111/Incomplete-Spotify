@@ -1,9 +1,17 @@
 import React from 'react'
+import "../Css/player.css"
+import Sidebar from './Sidebar'
+import Body from './Body'
+import Footer from './Footer'
 
-const Player = () => {
+const Player = ({spotify}) => {
   return (
     <div>
-      Hello
+      <div className="player">
+        <Sidebar/>
+        <Body/>
+      </div>
+      <Footer/>
     </div>
   )
 }
