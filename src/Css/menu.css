@@ -15,15 +15,16 @@
 .sidebar--play{
     margin-left: .5rem;
     padding: .3rem;
-    font-size: 12px;
+    font-size: 14px;
 }
 .sidebar hr{
     width: 90%;
-    border:1px solid #282828 ;
+    border:1px solid #353434 ;
     margin: 10px auto;
 }
-.sidebar > p{
-    margin-left: 20px;
+.menu > p{
+    margin-left: 16px;
+    margin-right: 16px;
     margin-top: 10px;
     font-size: 14px;
 }
