@@ -1,9 +1,58 @@
 .footer{
     position: fixed;
-    bottom: 0;
-    height: 65px;
+    bottom: 0;display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
     border:1px solid black;
     width: 100%;
     background-color: #282828;
-    padding: 22px;
+    padding: 25px;
+}
+.left{
+    flex: .3;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    width: 350px;
+}
+.left h4{
+    margin-bottom: 5px;
+}
+.left p{
+    font-size: 12px;
+}
+.album--logo{
+    height: 50px;
+    object-fit: cover;
+    width: 55px;
+    margin-right: 20px;
+}
+.center{
+    flex: .4;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 0px 100px;
+    max-width: 400px;
+}
+.footer--green{
+    color: #1ed15e;
+}
+.footer--green:hover,.footer--skip:hover,.footer--play:hover{
+    transform: scale(1.3) !important;
+    transition: transform .2s ease-in-out;
+}
+
+.right{
+    flex: .3;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    align-items: center;
+}
+.right .slider{
+    color: #1ed15e;
+    margin-left: 10px;
 }
