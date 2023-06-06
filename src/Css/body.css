@@ -5,3 +5,25 @@
     padding: 30px;
     background: linear-gradient(rgb(91, 87, 115), rgba(0,0,0,1));
 }
+.body--info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.body--info img{
+    height: 30vh;
+    margin: 0 20px;
+    box-shadow: 0px 4px 60px rgba(0,0,0,.5);
+}
+.info--text{
+    flex: 1;
+}
+.info--text h2{
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 62px;
+    margin-bottom: 10px;
+}
+.info--text p{
+    font-size: 14px;
+}

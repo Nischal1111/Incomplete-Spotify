@@ -1,4 +1,4 @@
-import React,{useContext,useReducer,createContext} from 'react'
+import React,{useContext,useReducer,createContext, useEffect, useState} from 'react'
 
 export const StateContext =createContext();
 
@@ -13,3 +13,4 @@ const StateProvider = ({children,reducer,initialState}) => {
 export default StateProvider
 
 export const useStateContextValue =()=> useContext(StateContext);
+

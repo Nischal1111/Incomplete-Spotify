@@ -1,10 +1,19 @@
 import React from 'react'
 import "../Css/body.css"
+import Header from './Header'
 
-function Body() {
+function Body({spotify}) {
   return (
     <div className='body'>
-      hello
+      <Header spotify={spotify}/>
+      <div className="body--info">
+        <img src='https://www.hypebot.com/wp-content/uploads/2020/07/discover-weekly.png'></img>
+        <div className='info--text'>
+        <strong>PLAYLIST</strong>
+        <h2>Discover Weekly</h2>
+        <p>Description...</p>
+      </div>
+      </div>
     </div>
   )
 }
