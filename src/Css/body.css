@@ -42,7 +42,3 @@
     font-size: 80px !important;
     margin: 20px 20px 20px 50px;
 }
-.icons--body .player:hover{
-    transform: scaleX(1.08);
-    transition: .1s transform ease-in;
-}
