@@ -11,7 +11,8 @@
     padding: 10px;
 }
 .body--info img{
-    height: 30vh;
+    height: 24vh;
+    width: 170px;
     margin: 0 20px;
     box-shadow: 0px 4px 60px rgba(0,0,0,.5);
 }
@@ -26,4 +27,22 @@
 }
 .info--text p{
     font-size: 14px;
+}
+.body--song{
+    margin: 20px -30px;
+}
+.icons--body{
+    display: flex;
+    align-items: center;
+}
+.icons--body .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+.icons--body .player{
+    font-size: 80px !important;
+    margin: 20px 20px 20px 50px;
+}
+.icons--body .player:hover{
+    transform: scaleX(1.08);
+    transition: .1s transform ease-in;
 }

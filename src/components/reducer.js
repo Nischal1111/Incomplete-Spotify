@@ -26,7 +26,11 @@ const reducer =(state,action)=>{
                 ...state,
                 playlists:action.playlists
             }
-        
+        case "Set_Just_My_Playlist":
+            return{
+                ...state,
+                Just_my_Playlist:action.Just_my_Playlist
+            }
         default :
             return state
     }

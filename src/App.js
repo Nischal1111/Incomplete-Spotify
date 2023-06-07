@@ -37,6 +37,12 @@ function App() {
           playlists:playlists
         })
       })
+      spotify.getPlaylist("4Buf9yxcLraE7bfXO8co7q").then(response=>{
+        dispatch({
+          type:"Set_Just_My_Playlist",
+          Just_my_Playlist:response,
+        })
+      })
     }
   },[])
 

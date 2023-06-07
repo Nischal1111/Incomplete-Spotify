@@ -1,7 +1,8 @@
 .header{
     display: flex;
     justify-content:space-between;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-top: -15px;
 }
 .header--left{
     flex: .5;
