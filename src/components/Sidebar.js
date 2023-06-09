@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import Menu from './Menu'
 import { useStateContextValue } from './State';
+import Playlist from './Playlist';
 
 function Sidebar() {
     const [{playlists},dispatch]= useStateContextValue();
@@ -18,8 +19,8 @@ function Sidebar() {
     <strong className='sidebar--play'>PLAYLISTS</strong>
     <hr/>
     {playlists?.items?.map((playlist)=>{
-        return <Menu title={playlist.name}/>
-    })}
+            return <Menu title={playlist.name}/>
+        })}
     </div>
   )
 }

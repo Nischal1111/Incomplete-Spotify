@@ -3,7 +3,11 @@
     height: 100vh;
     color: white;
     padding: 30px;
+    overflow-y: overlay;
     background: linear-gradient(rgb(91, 87, 115), rgba(0,0,0,1));
+}
+.body::-webkit-scrollbar{
+    display: none;
 }
 .body--info{
     display: flex;
@@ -37,12 +41,10 @@
 }
 .icons--body .MuiSvgIcon-root{
     margin-right: 20px;
+    color:#1ed15e;
 }
 .icons--body .player{
-    font-size: 80px !important;
-    margin: 20px 20px 20px 50px;
-}
-.icons--body .player:hover{
-    transform: scaleX(1.08);
-    transition: .1s transform ease-in;
+    font-size: 60px !important;
+    margin: 0px 20px 2px 50px;
+    color: #1ed15e;
 }

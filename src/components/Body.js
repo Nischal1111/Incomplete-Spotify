@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Css/body.css"
 import Header from './Header'
+import Song from './Song'
 import { useStateContextValue } from './State'
 import { Favorite} from '@mui/icons-material'
 import { MoreHoriz } from '@mui/icons-material'
@@ -25,6 +26,10 @@ function Body({spotify}) {
             <Favorite fontSize='large'/>
             <MoreHoriz/>
           </div>
+          {Just_my_Playlist?.tracks.items.map(item=>{
+            return (
+            <Song track={item.track}/>
+          )})}
         </div>
     </div>
   )
