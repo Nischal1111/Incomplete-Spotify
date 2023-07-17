@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useStateContextValue } from './State';
+import {cases} from "./constants"
 import axios from 'axios';
 
 const Playlist = () => {
@@ -9,10 +10,10 @@ const Playlist = () => {
         const getPlaylist = async () => {
 
         const response = await axios.get(
-            'https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n',
+            'https://api.spotify.com/v1/playlists',
             {
                 headers: {
-                Authorization: 'Bearer ' + token, // Added a space after "Bearer"
+                Authorization: 'Bearer ' + token,
                 'Content-Type': 'application/json',
             },
         }
@@ -21,12 +22,14 @@ const Playlist = () => {
         const playlists=items?.map(({name,id})=>{
             return {name,id}
         })
-        console.log(playlists)
+        dispatch({type:cases.SET_PLAYLISTS,playlists})
     }
         getPlaylist();
     }, [token, dispatch]);
 
-return <div></div>;
+return <div>
+    
+</div>;
 };
 
 export default Playlist;

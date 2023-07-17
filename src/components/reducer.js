@@ -1,3 +1,4 @@
+import {cases} from "./constants"
 export const initialState={
     user:null,
     playlists:[],
@@ -6,10 +7,7 @@ export const initialState={
     token:null,
 
 }
-    // Action = type,[payload]
-
 const reducer =(state,action)=>{
-    console.log(action)
     switch(action.type){
         case "SET_USER":
             return{

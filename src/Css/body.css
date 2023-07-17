@@ -3,8 +3,9 @@
     height: 100vh;
     color: white;
     padding: 30px;
-    overflow-y: overlay;
-    background: linear-gradient(rgb(32, 87, 100), rgba(0,0,0,1));
+    overflow: auto;
+    background: linear-gradient(transparent,rgba(0,0,0,10));
+    background-color: rgb(32,87,100);
 }
 .body::-webkit-scrollbar{
     display: none;
