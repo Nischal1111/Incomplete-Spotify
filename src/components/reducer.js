@@ -1,10 +1,11 @@
-import {cases} from "./constants"
+
 export const initialState={
     user:null,
     playlists:[],
     item:null,
     playing:false,
     token:null,
+    sP:"4Buf9yxcLraE7bfXO8co7q",
 
 }
 const reducer =(state,action)=>{
@@ -24,11 +25,11 @@ const reducer =(state,action)=>{
                 ...state,
                 playlists:action.playlists
             }
-        case "Set_Just_My_Playlist":
-            return{
-                ...state,
-                Just_my_Playlist:action.Just_my_Playlist
-            }
+        // case "Set_Just_My_Playlist":
+        //     return{
+        //         ...state,
+        //         Just_my_Playlist:action.Just_my_Playlist
+        //     }
         default :
             return state
     }
