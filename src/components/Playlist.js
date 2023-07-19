@@ -10,7 +10,7 @@ const Playlist = () => {
         const getPlaylist = async () => {
 
         const response = await axios.get(
-            'https://api.spotify.com/v1/playlists',
+            'https://api.spotify.com/v1/playlists/73uqBsL58hvh5Tgarkvu6d',
             {
                 headers: {
                 Authorization: 'Bearer ' + token,
@@ -28,7 +28,7 @@ const Playlist = () => {
     }, [token, dispatch]);
 
 return <div>
-    
+
 </div>;
 };
 

@@ -5,6 +5,10 @@
     color: aliceblue;
     min-width: 230px;
     padding: 0px 10px;
+    overflow: auto;
+}
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 .logo{
     height: 70px;

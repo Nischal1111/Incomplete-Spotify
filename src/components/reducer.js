@@ -5,7 +5,7 @@ export const initialState={
     item:null,
     playing:false,
     token:null,
-    sP:"4Buf9yxcLraE7bfXO8co7q",
+    playlist_id:'4TiJMtm5tGoJygV4bFIwy4',
 
 }
 const reducer =(state,action)=>{
